@@ -58,17 +58,169 @@ There will be a vegetarian option available, but please let us know if you have 
 </p>
 <h2>
 <a id="programme" class="anchor" href="#programme" aria-hidden="true"><span class="octicon octicon-link"></span></a>Programme</h2>
+<p>The meeting will begin at 12:00 and last until 18:00. We are hoping to book some space for dinner after the meeting. If you're interested, please let us know on the registration form.</p>
 
-<p>The meeting will begin at 12:00 and last until 17:30. We are hoping to book some space for dinner after the meeting. If you're interested, please let us know on the registration form.</p>
+<h3>12:00 - 13:00: Lunch</h3>
 
-<p>Detailed programme to be announced (soon!).</p>
+<h3>13:00 - 14:00: Concurrency Session The</h3>
+<ul>
+  <li><h4>13:00 - 13:30: Jan de Muijnck-Hughes</h4>
+    <p>
+    <blockquote>
+      <p>The Border Patrol Project seeks to investigate how state-of-the-art advances in
+programming language theory can provide better guarantees towards
+System-On-Chip (SoC) design and execution.  Specifically we are interested in
+extending existing work on structural type systems for SoC with that of
+Multi-Party Session Types and Dependent Types.</p>
+
+      <p>In this talk I will: briefly discuss the goals of the Border Patrol Project;
+outline some of the design challenges we have encountered so far when looking
+to adapt multi-party session types for describing hardware; and demonstrate how
+dependent types help reason about the structure of SoC architectures.</p>
+      </blockquote>
+    </p>
+  </li>
+
+  <li><h4>13:30 - 14:00: Thomas Weber</h4>
+    <p>
+    <blockquote>
+      <p>Whenever we want to write an application for real-world users, some form of UI
+is required. But with something as unpredictable as a human on one side and a,
+usually non-trivial, application on the other, things are bound to get
+complicated. The fact that creating and updating UIs is often a
+boilerplate-heavy process doesn't help, either.</p>
+
+      <p>That makes UIs not a lot of fun to write, hard to understand, and cumbersome to
+      maintain.</p>
+
+      <p>Splitting the UI into smaller components, a popular approach, helps with the
+      development of the individual components but adds additional wiring-overhead.</p>
+
+      <p>We will take a look at how concurrency models can give us a high level
+abstraction for easily composable UI components while allowing developers to
+focus on the parts of a UI that really matter.</p>
+    </blockquote></p>
+</ul>
+
+<h3>14:00 - 14:30: Coffee</h3>
+
+<h3>14:30 - 16:00: The Normali{s, z}ing Session</h3>
+<ul>
+  <li><h4>14:30 - 15:00: Stuart Gale -- Normalization or Bust</h4>
+    <blockquote><p>
+      This talk reports on the experiment of combining bidirectional
+      typechecking with a small step operational semantics. Simply typed lambda
+      calculus is, unsurprisingly, still normalizing. However, this is true
+      even for terms that do not typecheck! The bidirectional setup marks each
+      redex with its active type and reduction will get stuck if the type is
+      insufficient.
+    </p></blockquote>
+  </li>
+
+  <li><h4>15:00 - 15:30: Shayan Najd -- Embedding by Normalisation</h4>
+    <blockquote>
+      <p>
+ In this talk, I present the insight that the practical concept of embedded
+ domain-specific compilers (EDSC), describing embedded domain-specific
+ languages (EDSL) used for generating code often for external targets, is
+ deeply related to the theoretical concept of Normalisation-By-Evaluation
+ (NBE), describing the process of deriving the canonical form of terms with
+ respect to an equational theory.
+      </p>
+
+      <p>
+      Since an embedded term is encoded as a collection of host language terms,
+evaluation of the non-value host terms results in normalisation of the embedded
+term, and since EDSCs rely on an intermediate interface to generate their
+target code from, all embedded terms are designed to eventually adhere to the
+normal forms described by the interface. In other words, the structure of an
+EDSC allows it to perform Normalisation on embedded terms By encoding them as a
+collection of value and non-value host terms, employing Evaluation in the host
+language, and then deriving the resulting terms adhering to the intermediate
+interface. This structure, together with a collection of correctness laws,
+forms an NBE process.
+      </p>
+
+      <p>
+This connection, referred to as embedding by normalisation (EBN), is
+theoretically useful in that it helps us to understand and reason about
+embedded terms and their semantics, and practically beneficial in that it
+enables us to directly apply techniques from NBE. For instance, through EBN, we
+can adapt the treatment of sums, or constants, from NBE to embedding, resolving
+some not fully resolved problems.
+      </p>
+    </blockquote>
+  </li>
+
+  <li><h4>15:30 - 16:00: James Chapman -- Delayed NBE</h4>
+    <blockquote><p>Abstract delayed...</p></blockquote>
+  </li>
+</ul>
+
+<h3>16:00 - 16:30: Coffee</h3>
+
+<h3>16:30 - 18:00: The Parallel Session</h3>
+<ul>
+  <li><h4>16:30 - 17:00: Yasir Alguwaifli -- Measuring Energy Usage for Parallel Haskell Programs</h4>
+    <blockquote><p>
+In recent years, a number of functional programming languages have started to
+support non-traditional computing platforms such as System-on-Chip (SoC),
+where the hardware and processing units could vary in design and put emphasis
+on different factors from those of conventional computing platforms. One
+problem that faces both heterogenous and homogenous platforms alike is the
+increasing cost/limitation of power sources. In this paper, we measure and
+correlate the energy usage of several parallel Haskell programs against
+execution time and other runtime system (RTS) metrics, produced using GHC. We
+show how energy usage relates to the number of cores on two real, widely-used
+multicore architectures: ARM and Intel x86. We give performance results on two
+machines, one of which has 28 physical cores, and supports hyperthreading. From
+these results, we construct an energy model and relate this model to the
+parallel structure of the program source. Given a suitable structural model of
+parallelism, for example that proposed by Castro et al or Schwaab et al, this
+gives a way that can be used to predict the energy usage for a concrete Haskell
+program running a real multicore system.
+      </p>
+    </blockquote>
+  </li>
+
+  <li><h4>17:00 - 17:30: Alastair Murray -- Layering Abstractions: Heterogeneous Programming and Performance Portability</h4>
+    <blockquote><p>
+      Widely used heterogeneous programming models such as OpenCL and CUDA
+      provide programmers a means of exploiting heterogeneous hardware to
+      achieve higher performance. A modern heterogeneous programming model,
+      however, should also aid programmer productivity and allow for portable
+      performance. This talk will give an overview of how this is being
+      achieved by layering abstractions, by providing high-level domain
+      specific approaches for programmers to model problems, and allowing the
+      flexibility for even lower level layers to gain more precise control over
+      hardware.
+      </p>
+    </blockquote>
+  </li>
+
+  <li><h4>17:30 - 18:00: Chris Schwaab -- First class Time and Energy for Multicore Systems</h4>
+    <blockquote><p>
+      Verifying non-functional properties of programs, such as time and/or
+      energy consumption, is often a difficult task. With emerging applications
+      such as the internet-of-things, however, it is becoming increasingly
+      important that devices operate reliably within known time and energy
+      bounds. At the same time, processor architectures are becoming more
+      complex. This means that traditional, usually compositional, modeling
+      techniques are not effective. To solve this problem, we propose the
+      introduction of fuzzy bounds that will allow us to reason formally about
+      the probabilistic consumption of resources, in terms of program inputs.
+      Our approach is type-directed, relating program sources directly to their
+      probabilistic costs.
+    </p></blockquote>
+  </li>
+</ul>
 
 
 <h2>
 <a id="venue-and-travel" class="anchor" href="#venue-and-travel" aria-hidden="true"><span class="octicon octicon-link"></span></a>Venue and Travel</h2>
 
 <p>SPLS will take place at the Informatics Forum, 10 Crichton Street, Edinburgh. The main entrance is opposite Appleton Tower.
-The seminar will take place in rooms 4.31 / 4.33; lunch will take place in Mini Forum 1; and coffee breaks will take place in Mini Forum 2. All will be signposted on the day.</p>
+The seminar will take place in rooms 4.31 / 4.33, and lunch and coffee breaks will take place in Mini Forum 2. All will be signposted on the day.</p>
 
 
 <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1183.5610174371202!2d-3.187107574010932!3d55.944767069959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c78447fcdee1%3A0xb4769668986c5918!2s10+Crichton+St%2C+Edinburgh+EH8+9AB!5e0!3m2!1sen!2suk!4v1441824634154" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></p>
