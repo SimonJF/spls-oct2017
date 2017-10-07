@@ -46,7 +46,7 @@ There will be a vegetarian option available, but please let us know if you have 
 
 <p>
 	<ul>
-    <li>Yasir Alguwaifli (University of St Andrews) -- Measuring Energy Usage for Parallel Haskell Programs</li>
+    <li>Adam Barwell (University of St Andrews) -- In Search of a Map</li>
     <li>James Chapman (University of Strathclyde) -- Delayed NBE</li>
     <li>Stuart Gale (University of Strathclyde) -- Normalization or Bust</li>
     <li>Jan de Muijnck-Hughes (University of Glasgow) -- Designing Hardware using Session Types and Dependent Types: A First Look</li>
@@ -161,25 +161,17 @@ some not fully resolved problems.
 
 <h3>16:30 - 18:00: The Parallel Session</h3>
 <ul>
-  <li><h4>16:30 - 17:00: Yasir Alguwaifli -- Measuring Energy Usage for Parallel Haskell Programs</h4>
+  <li><h4>16:30 - 17:00: Adam Barwell -- In Search of a Map</h4>
     <blockquote><p>
-In recent years, a number of functional programming languages have started to
-support non-traditional computing platforms such as System-on-Chip (SoC),
-where the hardware and processing units could vary in design and put emphasis
-on different factors from those of conventional computing platforms. One
-problem that faces both heterogenous and homogenous platforms alike is the
-increasing cost/limitation of power sources. In this paper, we measure and
-correlate the energy usage of several parallel Haskell programs against
-execution time and other runtime system (RTS) metrics, produced using GHC. We
-show how energy usage relates to the number of cores on two real, widely-used
-multicore architectures: ARM and Intel x86. We give performance results on two
-machines, one of which has 28 physical cores, and supports hyperthreading. From
-these results, we construct an energy model and relate this model to the
-parallel structure of the program source. Given a suitable structural model of
-parallelism, for example that proposed by Castro et al or Schwaab et al, this
-gives a way that can be used to predict the energy usage for a concrete Haskell
-program running a real multicore system.
-      </p>
+            Recursion schemes, such as the well-known map, can be used as loci of 
+	    potential parallelism, where schemes are replaced with an 
+	    equivalent parallel implementation. This talk describes a novel technique,
+	    using program slicing, that automatically and statically identifies computations
+	    in recursive functions that can be lifted out of the function and then potentially
+	    performed in parallel. We have implemented our approach, and will report on our
+	    results from applying our prototype to 12 Haskell examples, including benchmarks
+	    from the NoFib suite and functions from the standard Haskell Prelude.
+	    </p>
     </blockquote>
   </li>
 
